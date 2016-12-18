@@ -1,0 +1,42 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "HelveticaNeueCyr-Roman";
+	font-size: 12pt;
+}
+
+div {
+	text-align: center;
+	margin: 20% auto;
+}
+
+h1 {
+	color: #cc3333;
+}
+
+p {
+	line-height: 20px;
+}
+
+#back {
+	margin: 0 auto;
+	border: none;
+    cursor: pointer;
+    padding: 10px 40px;
+    font-size: 1.2em
+    background-color: #cc3333;
+    border-radius: 10px;
+    color: white;
+	text-decoration: none;
+}
+
+#back:hover {
+	background-color: #fc3333;
+	transition: all 0.3s ease;
+}
+
+#back:active {
+	position: relative;
+	top: 2px;
+	transition: all 0.1s ease;
+}

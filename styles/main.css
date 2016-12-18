@@ -1,0 +1,625 @@
+body {
+	color: #000;
+	font-family: "HelveticaNeueCyr-Roman";
+	font-size: 12pt;
+	margin: 0;
+	padding: 0;
+}
+
+#top_nav, #main h1, #main h2, #main p, .dash .digit, #icon-wrap .icon-row .icon-cell .pimg, #icon-wrap .icon-row .icon-cell p, #how_work .step .text a, #portfolio, #footer, #modal_form h5 {
+	text-align: center;
+}
+
+#header img[src="/images/bellanding.png"], #header .email, #header .phones, #icon-wrap .icon-row .icon-cell, #guarantee .img {
+	float: left;
+}
+
+.go {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+h4, h5, h6 {
+	font-weight: normal;
+	font-family: "HelveticaNeueCyr-Medium";
+}
+
+h4 {
+	font-size: 2.1em;
+	letter-spacing: 4px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+h5 {
+	font-size: 1.8em;
+	margin: 0;
+}
+
+h5 span {
+	font-size: 1.5em;
+	margin-right: 15px;
+}
+
+h6 {
+	font-size: 1.5em;
+	font-family: "HelveticaNeueCyr-Roman";
+	letter-spacing: 2px;
+	margin: 0 0 0 60px;
+	text-transform: uppercase;
+}
+
+.both {
+	clear: both;
+}
+
+.container, #top_nav {
+	min-width: 900px;
+	max-width: 1440px;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+#main-wrap {
+	width: 900px;
+	border: 1px #f2f2f2 solid;
+	margin: 0 auto;
+	position: relative;
+	top: -47px;
+}
+
+#header {
+	height: 100px;
+}
+
+#header img[src="/images/bellanding.png"]{
+	height: 77px;
+	width: 299px;
+	margin-left: 1.5%;
+	margin-top: 10px;
+}
+
+#header .email {
+	font-size: 16pt;
+	font-family: "Proxima Nova Regular";
+	float: right;
+	margin-right: 4%;
+	margin-top: 7px;
+}
+
+#header .email span {
+	font-size: 23pt;
+}
+
+#header .phones {
+	font-size: 14pt;
+	font-family: "Proxima Nova Regular";
+	float: right;
+	margin: 0.5% 1.5% 0 0;
+}
+
+#header .phones .number p {
+	margin: 8px auto;
+	float: right;
+}
+
+#header .phones img {
+	margin-top: 3px;
+	margin-right: 5px;
+	float: right;
+}
+
+#header .phones img[alt="мтс"] {
+	height: 1.6em;
+	width: 1.62em;
+}
+
+#header .phones img[alt="велком"] {
+	height: 1.47em;
+	width: 1.8em;
+}
+
+#top_nav {
+	border-top: 10px #cc3333 solid;
+	height: 40px;
+	background-color: #fff;
+	padding-top: 15px;
+	width: 100%;
+	min-width: 900px;
+	max-width: 1440px;
+	top: 90px; 
+  	position: fixed;
+  	z-index: 9;
+}
+
+#top_nav a {
+	color: #444;
+	padding: 0 12px 12px 10px;
+	transition: all 0.2s ease;
+}
+
+#top_nav a:active {
+	color: #000;
+	transition: all 0.2s ease;
+}
+
+#top_nav a[href="javascript://0"]:hover {
+	border-bottom: 4px #db2329 solid;
+	transition: all 0.2s ease;
+}
+
+#top_nav .order, #modal_form input[type="submit"] {
+	color: #fff;
+	background-color: #cc3333;
+	border-radius: 10px;
+	padding-top: 9px;
+	margin: -9px 1.5% 0 0;
+	float: right;
+	transition: all 0.2s ease;
+}
+
+#top_nav .order:hover {
+	color: #fff;
+	background-color: #fc3333;
+	transition: all 0.3s ease;
+}
+
+#top_nav .order:active {
+	color: #fff;
+	transition: all 0.2s ease;
+	margin-top: -6px;
+}
+
+#main {
+	margin-top: 55px;
+	background-image: url('/images/re.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+#main h1, #main h2 {
+	color: #fff;
+}
+
+#main h1 {
+	padding-top: 3%;
+	font-family: "HelveticaNeueCyr-Bold";
+	font-size: 36pt;
+}
+
+#main h1 span {
+	font-family: "HelveticaNeueCyr-Medium";
+	font-size: 28pt;
+}
+
+#main h2 {
+	font-family: "HelveticaNeueCyr-Light";
+	font-size: 18pt;
+}
+
+#main p {
+	margin-top: 4%;
+}
+
+#main p a {
+	background-color: #cc3333;
+	color: #fff;
+	padding: 15px 80px;
+	transition: all 0.3s ease;
+}
+
+#main p a:hover {
+	background-color: #fc3333;
+	transition: all 0.3s ease;
+}
+
+#main p a:active {
+	transition: all 0.2s ease;
+	border: 2px #cc3333 solid;
+}
+
+#main #stock {
+	margin: 48px auto;
+	background-color: #000;
+	opacity: 0.88;
+	z-index: 0;
+	width: 900px;
+	height: 130px;
+}
+
+
+
+#countdown_dashboard {
+	height: 110px;
+	position: relative;
+	bottom: 120px;
+	right: 50px;
+}
+
+.dash {
+	width: 60px;
+	height: 70px;
+	background: #fff;
+	float: left;
+	margin-left: 15px;
+	position: relative;
+	left: 600px;
+	bottom: 10px;
+}
+
+.dash .digit {
+	font-size: 30pt;
+	font-weight: bold;
+	float: left;
+	width: 21px;
+	left: 10px;
+	font-family: Times;
+	color: #000;
+	position: relative;
+}
+
+.dash_title {
+	position: relative;
+	display: block;
+	bottom: 0px;
+	top: 70px;
+	left: 2px;
+	font-size: 9pt;
+	font-family: "HelveticaNeueCyr-LightItalic";
+	color: #fff;
+	text-transform: uppercase;
+}
+
+#main #stock h3 {
+	position: relative;
+	top: 10px;
+	display: block;
+	font-weight: normal;
+	font-family: "HelveticaNeueCyr-Medium";
+	background-color: #db2328;
+	color: #fff;
+	letter-spacing: 3pt;
+	width: 100px;
+	padding: 5px 15px;
+}
+
+#main #stock h3 {
+	transition: all 0.5s ease
+}
+
+#main #stock p {
+	position: relative;
+	color: #fff;
+}
+
+#main #stock p {
+	left: 5px;
+	text-align: left;
+	font-size: 13pt;
+	letter-spacing: 3px;
+}
+
+#main #stock .stock_title {
+	font-family: "HelveticaNeueCyr-LightItalic";
+	font-size: 10pt;
+	text-align: right;
+}
+
+/* Наши преимущества */
+
+#icon-wrap {
+	margin-top: -80px;
+	width: 900px;
+}
+
+#icon-wrap .icon-row {
+	margin-top: 40px;
+}
+
+#icon-wrap .icon-row .icon-cell {
+	width: 225px;
+}
+
+#icon-wrap .icon-row .icon-cell img {
+	width: 120px;
+	height: 120px;
+}
+
+#icon-wrap .icon-row .icon-cell p {
+	font-family: "HelveticaNeueCyr-Bold";
+	font-size: 0.85em; 
+}
+
+
+/* Порядок работы */
+
+#how_work .step {
+	margin-top: 80px;
+	padding: 0 20px;
+}
+
+.text p {
+	color: #666;
+	display: block;
+	margin-bottom: 25px;
+	width: 380px;
+	line-height: 150%;
+	font-size: 0.9em;
+}
+
+#how_work .step .text a, #consultation a {
+	background-color: #cc3333;
+	color: #fff;
+	padding: 8px 70px;
+	margin-left: 5%;
+}
+
+
+#how_work .step .text a:hover, #consultation a:hover {
+	background-color: #fc3333;
+	transition: all 0.3s ease;
+}
+
+#how_work .step .text a:active, #consultation a:active {
+	background-color: #ff7733;
+	transition: all 0.2s ease;
+}
+
+#how_work .step .text {
+	width: 380px;
+	height: 300px;
+}
+
+#how_work .step .text h5 {
+	padding-top: 8%;
+}
+
+#how_work .img {
+	width: 480px;
+	height: 300px;
+	float: right;
+}
+
+#how_work .step .img img {
+	width: 100%;
+	height: 100%;
+	position: static;
+}
+
+#how_work .second .text {
+	float: right;
+}
+
+/* Примеры наших работ */
+
+.table {
+	display: table;
+	margin: 40px auto 0;
+}
+
+.row {
+	display: table-row;
+}
+
+.cell {
+	display: table-cell;
+}
+
+#portfolio .site {
+	height: 184px;
+	width: 350px;
+	cursor: pointer;
+	padding-top: 24px;
+}
+
+#portfolio .cell {
+	padding: 0 35px 20px;
+}
+
+#portfolio .cell .title {
+	width: 350px;
+	background-color: red;
+	position: relative;
+	margin: 0;
+	bottom: 53px;
+	z-index: 2;
+}
+
+#portfolio .table .table {
+	margin-top: 0;
+	border: #eee 5px solid;
+	border-top: none;
+	padding: 10px 43px;
+	transition: all 0.5s ease;
+}
+
+#portfolio .table .table:hover {
+	background-color: #f8f8f8;
+	transition: all 0.5s ease;
+}
+
+#portfolio .cell .cell {
+	padding: 0 3px;
+	line-height: 20px;
+	font-size: 13pt;
+}
+
+#portfolio .cell .cell:nth-child(1) {
+	text-align: left;
+}
+
+#portfolio .cell .cell:nth-child(2) {
+	text-align: right;
+	color: #cc3333;
+	font-weight: bold;
+}
+
+/* Консультация */
+
+#consultation a {
+	padding: 12px 70px;
+}
+
+#consultation .img {
+	width: 450px;
+}
+
+#consultation .img img {
+	width: 100%;
+	height: 100%
+}
+
+#consultation .text {
+	width: 450px;
+	height: 360px;
+	float: right;
+}
+
+#consultation .text h5 {
+	font-size: 1.1em;
+	margin-top: 40px;
+}
+
+#consultation .text h5:nth-child(3) {
+	margin-bottom: 65px;
+}
+
+#consultation .text a {
+	margin-left: 60px;
+}
+
+/* Гарантия */
+
+#guarantee .img {
+	margin: 50px 0 0 20px;
+}
+
+#guarantee .img img {
+	width: 80%;
+	height: 80%;
+}
+
+#guarantee .text {
+	padding: 10px;
+}
+
+#guarantee .text p {
+	width: 100%;
+	font-size: 1em;
+}
+
+/* Футер */
+
+#footer {
+	background-image: url('/images/footer_bg.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 326px;
+	margin-top: -46px;
+}
+
+#footer h4 {
+	font-size: 1.7em;
+	line-height: 45px;
+	color: #fff;
+	padding-top: 30px;
+	margin-top: 0;
+	margin-bottom: 11px;
+	text-align: center;
+}
+
+#footer h4 span {
+	letter-spacing: 2px;
+	font-size: 0.7em;
+}
+
+#footer a {
+	border: 3px #fff solid;
+	color: #fff;
+	padding: 14px 170px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	transition: all 0.5s ease;
+}
+
+#footer a:hover {
+	background: #676470;
+	transition: all 0.5s ease;
+}
+
+#footer a:active {
+	opacity: 0.7;
+	transition: all 0.2s ease;
+}
+
+
+/* Модально окно */
+
+#modal_form {
+	width: 350px; 
+	height: 180px; /* Рaзмеры дoлжны быть фиксирoвaны */
+	border-radius: 5px;
+	border: 5px #cc3333 solid;
+	background: #fff;
+	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	left: 50%; /* пoлoвинa экрaнa слевa */
+	margin-top: -90px;
+	margin-left: -175px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+	z-index: 1000; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+	padding: 20px 10px;
+}
+
+#modal_form input[type="text"] {
+	border-radius: 7px;
+	height: 40px;
+	font-size: 1.2em;
+	width: 300px;
+	margin: 15px 0 0 13px;
+	padding: 0 10px;
+}
+
+#modal_form input[type="submit"] {
+	border: none;
+	cursor: pointer;
+	height: 40px;
+	width: 250px;
+	margin: 15px 0 0 50px;
+	padding: 0;
+	float: none;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	cursor: pointer;
+	display: block;
+}
+
+/* Пoдлoжкa */
+#overlay {
+	z-index: 999; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position: fixed; /* всегдa перекрывaет весь сaйт */
+	background-color: #000; /* чернaя */
+	opacity: 0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity: 0.8; /* фикс прозрачности для старых браузеров */
+	filter: alpha(opacity=80);
+	width: 100%; 
+	height: 100%; /* рaзмерoм вo весь экрaн */
+	top: 0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left: 0;
+	display: none; /* в oбычнoм сoстoянии её нет) */
+}

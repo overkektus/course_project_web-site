@@ -1,0 +1,285 @@
+body {
+	font-family: "HelveticaNeueCyr-Roman";
+	font-size: 14pt;
+	background-color: #eee;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	font-family: "HelveticaNeueCyr-Roman";
+}
+
+h1 {
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 8px;
+	font-family: "HelveticaNeueCyr-Medium";
+}
+
+table {
+	border-collapse: collapse;
+	text-align: center;
+	margin: 0 auto;
+	width: 99%;
+}
+
+table td {
+	border: 1px solid #000;
+}
+
+table tr:first-child td {
+	background-color: #aaa;
+}
+
+#menu {
+	border-top: 10px #cc3333 solid;
+	height: 40px;
+	background-color: #fff;
+	padding-top: 15px;
+	width: 100%;
+	min-width: 900px;
+	max-width: 1440px;
+	text-align: center;
+}
+
+#menu .a {
+	color: #444;
+	padding: 0 12px 12px 10px;
+	transition: all 0.2s ease;
+	margin: 0 15px;
+}
+
+#menu .a:active {
+	color: #000;
+	transition: all 0.2s ease;
+}
+
+#menu .a:hover {
+	border-bottom: 4px #db2329 solid;
+	transition: all 0.2s ease;
+}
+
+
+
+.button {
+	float: right;
+	color: #fff;
+	background-color: #cc3333;
+	border-radius: 10px;
+	padding: 9px 20px 10px 20px;
+	margin: -32px 1.5% 0 0;
+	float: right;
+	transition: all 0.2s ease;
+}
+
+.button:hover {
+	background-color: #fc3333;
+	transition: all 0.3s ease;
+}
+
+.button:active {
+	color: #fff;
+	margin-top: -30px;
+	transition: all 0.1s ease;
+}
+
+
+.inputtext {
+	font-family: "HelveticaNeueCyr-Medium";
+	letter-spacing: 1px;
+	font-size: 0.9em;
+}
+
+
+.form {
+	margin: 0 auto;
+	border-radius: 5px;
+    border: 5px #cc3333 solid;
+    background-color: white;
+    padding: 25px;
+}
+
+#statistics, #auth {
+	text-align: center;
+}
+
+#auth {
+	margin-top: 15%;
+	width: 480px;
+}
+
+#statistics {
+	margin-bottom: 1%;
+	width: 380px;
+}
+
+#form_order {
+	width: 300px;
+	height: 225px;
+}
+
+#form_order div {
+	margin-bottom: 16px;
+}
+
+.form label {
+	margin-top: 10px;
+	display: inline-block;
+	text-align: right;
+}
+
+#auth label {
+	width: 70px;
+}
+
+#statistics label {
+	width: 140px;
+	margin-right: 20px;
+}
+
+#form_order label {
+	margin-top: 0;
+}
+
+.form input[type="text"], .form input[type="password"] {
+	background: rgba(255, 255, 255, .5);
+	border-radius: 7px;
+	padding: 3px 5px;
+	height: 20px;
+	outline: none;
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+
+.form input[type="submit"] {
+	border: none;
+    cursor: pointer;
+    height: 34px;
+    width: 160px;
+    padding: 0;
+    float: none;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #cc3333;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form input[type="submit"]:hover {
+	background-color: #fc3333;
+	transition: all 0.3s ease;
+}
+
+.form input[type="submit"]:active {
+	position: relative;
+	top: 2px;
+	transition: all 0.1s ease;
+}
+
+#form_order #button input[type="submit"] {
+	width: 175px;
+	margin: 6px 70px 0;
+}
+
+#auth input[type="submit"] {
+	margin: 15px 0 0 50px;
+}
+
+#statistics input[type="submit"] {
+	margin-top: 25px;
+}
+
+#statistics div:nth-child(7) {
+	margin-bottom: 10px;
+}
+
+#form_order input {
+	float: right;
+}
+
+
+
+#global_stat {
+	margin-top: 10%;
+}
+
+
+
+
+.check {
+	margin-left: 42%;
+	padding-top: 3px;
+}
+
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.checkbox + label {
+  	cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.checkbox:not(checked) {
+  	position: absolute;
+  	opacity: 0;
+}
+.checkbox:not(checked) + label {
+  	position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  	padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
+}
+
+#statistics .checklabel {
+	padding: 0;
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox:not(checked) + label:before {
+  	content: '';
+  	position: absolute;
+  	top: -4px;
+  	left: 0;
+  	width: 50px;
+  	height: 26px;
+  	border-radius: 13px;
+  	background: #CDD1DA;
+  	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox:not(checked) + label:after {
+  	content: '';
+  	position: absolute;
+  	top: -2px;
+  	left: 2px;
+  	width: 22px;
+  	height: 22px;
+	border-radius: 10px;
+  	background: #FFF;
+  	box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  	transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox:checked + label:before {
+  background: #9FD468;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.checkbox:checked + label:after {
+	left: 26px;
+}
+
+
+table #delete {
+	color: red;
+}
+
+table #edit {
+	color: #9FD468;
+}
+
+.message {
+	color: #c00;
+	text-align: center;
+	margin: 5px auto;
+}
